@@ -13,10 +13,7 @@ def login_page():
     if login_button:
         
         try:
-            con ,cur = connection()
-            cur.execute(sql,val)
-            data = cur.fetchall()
-            if data:
+            if username == "admin" and password == "admin":
         # Replace with your authentication logic
         
                 st.session_state.is_logged_in = True
