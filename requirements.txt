@@ -5,5 +5,3 @@ keras
 pillow
 numpy
 streamlit-option-menu
-mysql
-mysql-connector
