@@ -1,5 +1,4 @@
 import streamlit as st
-from databasecon import connection
 def login_page():
     st.title("Login Page")
     
@@ -7,9 +6,7 @@ def login_page():
     username = st.text_input("Username or Email ")
     password = st.text_input("Password", type="password")
     login_button = st.button("Login")
-    sql = "SELECT username FROM user WHERE email = %s or username=%s AND password = %s"
-    val= (username,username,password)
-    
+   
     if login_button:
         
         try:
