@@ -4,3 +4,4 @@ tensorflow
 keras
 pillow
 numpy
+streamlit-option-menu
